@@ -6,7 +6,7 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/27 05:28:14 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/27 05:32:17 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/07/27 05:44:34 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 int	ft_putchar(char c)
 {
-	return write(1, &c, 1);
+	write(1, &c, 1);
+	return (1);
 }
 
 int	ft_putstr(const char *s)
