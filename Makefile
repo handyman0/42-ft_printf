@@ -6,7 +6,7 @@
 #    By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/13 16:34:59 by lmelo-do          #+#    #+#              #
-#    Updated: 2025/07/27 05:41:56 by lmelo-do         ###   ########.fr        #
+#    Updated: 2025/08/04 18:39:49 by lmelo-do         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,13 +27,9 @@ clean:
 	rm -f ${OBJS}
 
 fclean: clean
-	rm -f ${NAME} test.out
+	rm -f ${NAME}
 
 re: fclean all
-
-test: ${NAME}
-	${CC}${CFLAGS} main.c ${NAME} -o test.out
-	./test.out
 
 %.o:%.c
 	${CC} ${CFLAGS} -c $< -o $@
