@@ -6,7 +6,7 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/27 05:28:14 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/07/27 05:44:34 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/08/04 15:07:19 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,6 @@ int	ft_putptr(void *ptr)
 
 	count = 0;
 	count += ft_putstr("0x");
-	count += ft_puthex_long(ptr);
+	count += ft_puthex_long((unsigned long)ptr);
 	return (count);
 }
