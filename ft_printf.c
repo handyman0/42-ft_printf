@@ -6,7 +6,7 @@
 /*   By: lmelo-do <lmelo-do@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/27 04:35:08 by lmelo-do          #+#    #+#             */
-/*   Updated: 2025/08/07 19:59:40 by lmelo-do         ###   ########.fr       */
+/*   Updated: 2025/08/07 20:19:53 by lmelo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static int	handle_format(char c, va_list args)
 	if (c == 'd' || c == 'i')
 		return (ft_putnbr(va_arg(args, int)));
 	if (c == 'u')
-		return (ft_putnbr_unsigned(va_arg(args, unsigned int)));
+		return (ft_putnbr(va_arg(args, unsigned int)));
 	if (c == 'x')
 		return (ft_puthex(va_arg(args, unsigned int), 0));
 	if (c == 'X')
